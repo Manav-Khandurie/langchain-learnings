@@ -4,3 +4,7 @@ python-dotenv
 streamlit
 langchain_community
 langserve
+bs4
+pypdf
+chromadb
+faiss-cpu
