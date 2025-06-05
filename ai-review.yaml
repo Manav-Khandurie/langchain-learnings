@@ -1,11 +1,10 @@
 model:
   provider:
-    type: bedrock
-  model_name: amazon.titan-text-premier-v1:0
-  region: us-east-1
+    type: deepseek
+  model_name: deepseek-chat
   credentials:
-    aws_access_key_id: ${AWS_ACCESS_KEY_ID}
-    aws_secret_access_key: ${AWS_SECRET_ACCESS_KEY}
+    api_key: ${DEEPSEEK_API_KEY}
+    api_base: https://api.deepseek.com/v1
 include:
   - "RAG"
   - "chatbots"
