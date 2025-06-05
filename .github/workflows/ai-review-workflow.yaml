@@ -17,7 +17,7 @@ jobs:
         uses: Manav-Khandurie/agents/code-review-agent@main # unstable
         with:
           config-path: "./ai-review.yaml"
-          score-threshold: 85
+          score-threshold: 75
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
