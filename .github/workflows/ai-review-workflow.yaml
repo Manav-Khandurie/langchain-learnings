@@ -23,3 +23,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           OPEN_API_KEY: ${{ secrets.OPEN_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_API_BASE_PHI4: ${{ secrets.HF_API_BASE_PHI4 }}
