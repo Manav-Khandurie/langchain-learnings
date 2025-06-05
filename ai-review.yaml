@@ -1,10 +1,11 @@
 model:
   provider:
-    type: openai
-  model_name: gpt-4o-mini
+    type: bedrock
+  model_name: amazon.titan-text-premier-v1:0
   region: us-east-1
   credentials:
-    api_key: ${OPEN_API_KEY}
+    aws_access_key_id: ${AWS_ACCESS_KEY_ID}
+    aws_secret_access_key: ${AWS_SECRET_ACCESS_KEY}
 include:
   - "RAG"
   - "chatbots"
