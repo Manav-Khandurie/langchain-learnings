@@ -1,8 +1,8 @@
 name: 🤖 AI Code Comment Bot
 on:
   schedule:
-    - cron: "0 1 * * *"  # Runs daily at 1AM UTC
-  workflow_dispatch:  # Allows manual triggering of the workflow
+    - cron: "0 1 * * *"  
+  workflow_dispatch:
 
 jobs:
   auto-comment:
@@ -26,8 +26,7 @@ jobs:
       - name: Run Code Comment Bot
         uses: Manav-Khandurie/auto-code-commenter@v1.3.0
         with:
-          src: "chatbots"
-          provider: "deepseek"
-          model_name: "deepseek-chat"
-          api_key: ${{ secrets.DEEPSEEK_API_KEY }}
-          api_base: "https://api.deepseek.com/v1"
+          src: "src"
+          provider: "openai"
+          model_name: "gpt-4o-mini"
+          api_key: ${{ secrets.OPENAI_API_KEY }}
