@@ -47,11 +47,11 @@ def setup_streamlit_ui():
     input_text = st.text_input("Search the topic you want")
 
     output_parser = StrOutputParser()
-    chain = prompt | llm | output_parser
+    chain = prompt | llm | output_parser  # Create a processing chain
 
     if input_text:
-        response = chain.invoke({'question': input_text})
-        st.write(response)
+        response = chain.invoke({'question': input_text})  # Invoke the chain with user input
+        st.write(response)  # Display the response in the Streamlit app
 
 if __name__ == "__main__":
     setup_streamlit_ui()

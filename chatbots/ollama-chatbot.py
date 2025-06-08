@@ -9,8 +9,8 @@ import os
 
 load_dotenv()
 
-os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
 
 # Define prompt template for the chat assistant
 prompt = ChatPromptTemplate.from_messages([
@@ -31,5 +31,5 @@ chain = prompt | llm | output_parser
 
 # Process user input and display results
 if input_text:
-    result = chain.invoke({"question": input_text})
-    st.write(result)
+    result = chain.invoke({"question": input_text})  # Invoke the chain with user input
+    st.write(result)  # Display the result in the Streamlit app
