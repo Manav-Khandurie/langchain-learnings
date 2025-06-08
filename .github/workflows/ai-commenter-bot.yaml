@@ -26,7 +26,7 @@ jobs:
       - name: Run Code Comment Bot
         uses: Manav-Khandurie/auto-code-commenter@v1.3.0
         with:
-          src: "src"
+          src: "chatbots"
           provider: "openai"
           model_name: "gpt-4o-mini"
           api_key: ${{ secrets.OPEN_API_KEY }}
