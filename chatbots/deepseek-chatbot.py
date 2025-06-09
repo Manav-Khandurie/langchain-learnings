@@ -6,6 +6,10 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
+"""Main module for Langchain demo with DeepSeek Chat integration.
+Handles LLM initialization, prompt setup, and Streamlit UI configuration.
+"""
+
 load_dotenv()
 
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
