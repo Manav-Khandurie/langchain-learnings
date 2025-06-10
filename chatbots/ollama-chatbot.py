@@ -10,6 +10,7 @@ import os
 
 load_dotenv()
 
+# Set up LangChain environment variables for tracing and API access
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGSMITH_API_KEY")
 
