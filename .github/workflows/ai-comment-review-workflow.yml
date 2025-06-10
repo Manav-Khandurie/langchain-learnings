@@ -15,7 +15,7 @@ jobs:
           tree
 
       - name: Run AI Code Review Agent
-        uses: Manav-Khandurie/agents/code-comment-review-agent@main # Stable tested 1.0.3
+        uses: Manav-Khandurie/agents/code-comment-review-agent@code-comment-review-agent-v1.0.0 # Stable tested code-comment-review-agent-v1.0.0
         with:
           config-path: "ai-comment-review.yaml"
           score-threshold: 85
