@@ -1,0 +1,13 @@
+model:
+  provider:
+    type: openai
+  model_name: gpt-4o-mini
+  region: us-east-1
+  credentials:
+    api_key: ${OPEN_API_KEY}
+include:
+  - "chatbots"
+exclude:
+  - "RAG"
+score_threshold: 75
+ 
